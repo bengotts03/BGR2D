@@ -1,9 +1,7 @@
 #include "Sprite.h"
 
 namespace BGR2D {
-    Sprite::Sprite(BGRCore::Texture& texture, Bounds bounds) {
-        _texture = texture;
-        _bounds = bounds;
+    Sprite::Sprite(BGRCore::Texture& texture, Bounds bounds) : _texture(texture), _bounds(bounds) {
     }
 
     Sprite::~Sprite() {
